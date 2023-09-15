@@ -1,16 +1,16 @@
 # VoiceComparator
 
-<p>Adli bilişim ve osint alanında varolan seslerin aynı kişiye ait olup olmadıklarını kontrol etmek için eğitimsel bir araç. Python3 resemblyzer kütüphanesine dayanmakta olan araç desteklenen formatlarda verilen sesleri (çok kısa sürelerde olsa) analiz ederek kosinüs benzerliğini kullanarak benzerliklerini hesaplamaktadır ve sonuçları verir.
+<p>An educational tool in the field of computer forensics and osint to check whether existing voices belong to the same person. Based on the Python3 resemblyzer library, the tool analyzes sounds given in supported formats (albeit in very short periods of time), calculates their similarities using cosine similarity and gives the results..
 <br>
 <hr>
 <br>
-<h2>Desteklenen ses formatları:</h2>
+<h2>Supported audio formats:</h2>
 
 `["MP3","OGG","FLAC","AAC","AIFF","WMA","WAV"]`
 
 
 <br>
-<h2>Gerekli kütüpahaneler:</h2> 
+<h2>Required libraries:</h2> 
 
 ```bash
 # Linux & MacOS
@@ -24,9 +24,9 @@ pip install install pydub numpy resemblyzer argparse time colorama
 
 ```
 
-<h2>Kullanımı:</h2>
+<h2>Usage:</h2>
 <br>
-Gerekli kütüphaneler kurulduktan sonra kullanımı gayet basittir.
+It is very simple to use after the necessary libraries are installed.
 
 ```bash
 cd VoiceComparator
@@ -34,23 +34,23 @@ python3.11 main.py --voice1 denemeSes1.mp3 --voice2 denemeKisi2.ogg
 
 ```
 
-<h2>ÖRNEK:</h2>
+<h2>Example:</h2>
 
-### AYNI KİŞİYE AİT SES KARŞILAŞTIRMASI:
+### VOICE COMPARISON OF THE SAME PERSON:
 <img src="img/ayni.png">
 
 
 <br>
 <br>
 
-### FARKLI KİŞİLERE AİT SES KARŞILAŞTIRMASI:
+### COMPARISON OF THE VOICES OF DIFFERENT PEOPLE:
 <img src="img/farkli.png">
 
 
 
-<h2>Teşekkürler </h2>
+<h2>Thanks </h2>
 <br>
-Ses örnekleri sağladıkları için teşekkürler:<br>
+    Thanks for providing audio samples:<br>
 <br>
 
 <a href="https://t.me/sudodr"> `https://t.me/sudodr` </a><br>
